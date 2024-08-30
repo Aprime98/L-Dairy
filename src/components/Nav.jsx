@@ -36,7 +36,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="bg-slate-800 text-grass-green h-[4rem] lg:py-5 px-4 lg:px-20 py-4 flex justify-between flex-1 items-center">
+      <div className="bg-slate-800 text-grass-green h-[4rem] px-4 lg:px-20 py-4 flex justify-between flex-1 items-center">
         <div className="flex items-center justify-start flex-1 space-x-2">
           <span className="text-xl">
             <IoMdCall />
@@ -53,7 +53,7 @@ const Nav = () => {
       </div>
 
       {/* navbar */}
-      <div className="bg-cyan-500/55 h-[4rem] flex justify-between z-50 text-slate-900 lg:py-5 px-4 lg:px-20 py-4 flex-1">
+      <div className="bg-softGreen h-[4rem] flex justify-between z-50 text-slate-900 lg:py-5 px-4 lg:px-20 py-4 flex-1">
         <div className="flex items-center flex-1">
           <Link spy={true} smooth={true} to="/">
             <img
@@ -66,7 +66,7 @@ const Nav = () => {
 
         <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">
-            <ul className="flex gap-8 mr-16 text-[18px]">
+            <ul className="flex gap-8 mr-16 text-[18px] font-roboto">
               <Link spy={true} smooth={true} to="/">
                 <li className="hover:text-love-green transition border-b-2 border-love-green hover:border-grass-green cursor-pointer">
                   Home
@@ -89,7 +89,7 @@ const Nav = () => {
         <div>{click && content}</div>
 
         <button
-          className="sm:hidden transition text-2xl block z-50"
+          className="sm:hidden transition text-grass-green text-3xl block z-50"
           onClick={handleClick}
         >
           {click ? <FaTimes /> : <CiMenuFries />}

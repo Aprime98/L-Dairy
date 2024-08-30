@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Manager from '../components/Manager';
+import Awards from '../components/Awards';
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <Manager />
+      <Awards />
+    </div>
   )
 }
 
